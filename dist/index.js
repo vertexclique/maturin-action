@@ -11738,10 +11738,7 @@ function xdg_config_home() {
     return `${os.homedir()}/.config`;
 }
 function getBeforeScript() {
-    if (IS_LINUX) {
-        return core.getInput('before-script-linux') || '';
-    }
-    return '';
+    return core.getInput('before-script') || '';
 }
 async function dockerBuild(container, maturinRelease, hostHomeMount, args) {
     var _a;

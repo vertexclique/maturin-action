@@ -49,7 +49,7 @@ inputs:
     description: Enable sccache for faster builds.
     required: false
     default: 'false'
-  before-script-linux:
+  before-script:
     description: Script to run before maturin command on Linux.
     required: false
 

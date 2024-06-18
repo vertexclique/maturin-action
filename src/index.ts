@@ -478,10 +478,7 @@ function xdg_config_home(): string {
 
 function getBeforeScript(): string {
   // Only Linux is supported for now
-  if (IS_LINUX) {
-    return core.getInput('before-script-linux') || ''
-  }
-  return ''
+  return core.getInput('before-script') || '';
 }
 
 /**

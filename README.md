@@ -48,7 +48,7 @@ take a look at the following examples:
 | rustup-components   |    No    | Rustup components                                                                                                  | string  | Defaults to empty                                                                                                                  |
 | working-directory   |    No    | The working directory to run the command in                                                                        | string  | Defaults to the root of the repository                                                                                             |
 | sccache             |    No    | Enable sccache for faster builds                                                                                   | boolean | Defaults to `false`                                                                                                                |
-| before-script-linux |    No    | Script to run before the maturin command on Linux                                                                  | string  |                                                                                                                                    |
+| before-script       |    No    | Script to run before the maturin command on Linux                                                                  | string  |                                                                                                                                    |
 
 
 ## `manylinux` Docker container

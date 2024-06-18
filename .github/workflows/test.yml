@@ -52,7 +52,7 @@ jobs:
           rust-toolchain: ${{ matrix.toolchain }}
           args: -o dist
           working-directory: maturin/test-crates/pyo3-mixed
-          before-script-linux: |
+          before-script: |
             sudo apt-get update
             sudo apt-get install -y libclang-dev
       - name: maturin build universal2 target
@@ -87,7 +87,7 @@ jobs:
         with:
           args: -m maturin/test-crates/pyo3-mixed/Cargo.toml -i python3.10 --out dist
           manylinux: '2014'
-          before-script-linux: |
+          before-script: |
             yum install -y llvm-toolset-7-clang
             source /opt/rh/llvm-toolset-7/enable 
       - name: maturin build nightly powerpc64le musl
